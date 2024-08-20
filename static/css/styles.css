@@ -1,0 +1,156 @@
+
+  /* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+body{
+  height: calc(100vh - 8em);
+  background-color: #212121;
+  padding: 1em;
+  color: rgba(255,255,255,.75);
+  font-family: 'Anonymous Pro', monospace;  
+
+}
+
+h1{
+  text-align: center;
+}
+
+
+.drop {
+	position: absolute;
+	top: 0;	
+	z-index: -1;
+  opacity: 0;
+}
+.snow {
+	height: 8px;
+	width: 8px;
+	border-radius: 100%;
+	background-color: #FFF;
+  box-shadow: 0 0 10px #FFF
+}
+
+
+.animate {
+	animation: falling 8.5s infinite ease-in;	
+}
+
+
+@keyframes falling {
+	0% {top: 0; opacity: 1;}
+	100% {top: 1500px; opacity: 0}
+}
+
+#get-story {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  padding: 5px 5px;
+  width: 20%;
+}
+
+  
+  #chat-box {
+    margin: auto;
+    width: 80%;
+    font-size: 30px;
+    /*background-color: #fff;*/
+    padding: 20px;
+    /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+  }
+
+  /* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+  #chat-box  {
+      font-size: 13px;
+      padding: 5px;
+  }
+}
+  
+  #message-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #message-list li {
+    margin: 10px 0;
+    animation: fadeIn 1s;
+  }
+  
+  #input-area {
+    display: none;
+    margin-top: 20px;
+  }
+  
+  input, button {
+    padding: 10px;
+    width: 80%;
+    margin: 5px;
+    font-family: 'Anonymous Pro';
+  }
+  
+  button {
+    cursor: pointer;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  #loading-indicator {
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-align: center;
+    animation: blink 1.4s infinite both;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: .2; }
+    20% { opacity: 1; }
+    80% { opacity: .2; }
+}
+
+#restart-chat {
+  position: fixed;
+  top: 10px;
+  right: 20px;
+  padding: 5px 5px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+  width: 20%;
+}
+
+footer {
+  text-align: center;
+  padding: 15px 10px;
+  background-color: #f2f2f2;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+footer p {
+  margin: 0;
+  color: #555;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+  footer {
+      font-size: 12px;
+      padding: 10px 5px;
+  }
+}
+
+
+  

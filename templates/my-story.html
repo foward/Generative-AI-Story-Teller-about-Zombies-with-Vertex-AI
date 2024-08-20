@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat with the Bot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <div class="container"> 
+  <h1> 📖 Your recent story 🧟</h1>
+
+  <div id="chat-box">
+
+    <div id="story" ></div>
+    <div id="loading-indicator" style="display: none;">...</div>
+
+  </div>
+  <button id="get-story">📖 Get Story</button>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  </div>
+  <footer>
+    <p>Created by Francisco Riveros <a href="https://www.linkedin.com/in/panchoriveros" target="_blank">LinkedIn</a> 2023 - with VertexAI (PalM)- Google Cloud</p>
+    <p><b>⚠️ Disclaimer</b>: This chat application is a demonstration and uses experimental technology. The conversations are generated using Large Language Models (LLMs) and are for illustrative purposes only. The content provided should not be considered accurate or reliable for serious use.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,11 @@
+google-cloud-aiplatform
+python-jose
+click
+requests
+firebase-admin # to store feedbacks
+uuid
+pydantic==1.10.8
+pytz
+Flask==3.0.0
+gunicorn==20.1.0
+Werkzeug==3.0.1
